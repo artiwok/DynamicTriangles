@@ -80,6 +80,7 @@ namespace DynamicTriangles
             Console.WriteLine();
 
 
+            // Version 1:
             // ***
             //  **
             //   *
@@ -104,6 +105,31 @@ namespace DynamicTriangles
                 }
 
                 for (int m = height_4; m > j; m--)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+
+            // Version 2:
+            // ***
+            //  **
+            //   *
+
+            Console.Write("Enter height_5: ");
+
+            int height_5 = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < height_5; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int k = height_5; k > i; k--)
                 {
                     Console.Write("*");
                 }
